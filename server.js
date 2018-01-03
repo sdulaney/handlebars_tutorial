@@ -2,7 +2,7 @@ var express = require('express');
 
 var app = express();
 
-// TODO - Include Handlebars
+app.set('view engine', 'hbs');
 
 app.get('/', (request, response) => {
     // TODO - Render the home page.
