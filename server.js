@@ -9,9 +9,9 @@ app.get('/', (request, response) => {
         title: 'Stewart Dulaney\'s Website',
         content: 'Hello World!',
         people: [
-            'Joe Bruin',
-            'Josie Bruin',
-            'Zaddy Block'
+            { firstName: 'Joe', lastName: 'Bruin' },
+            { firstName: 'Josie', lastName: 'Bruin' },
+            { firstName: 'Zaddy', middleName: 'Gene', lastName: 'Block' }
         ]
     });
 });
