@@ -7,7 +7,13 @@
         <p style="color:red;">{{content}}</p>
         <ul>
             {{#each people}}
-                <li>{{this}}</li>
+                <li>
+                    {{#if this.middleName}}
+                        {{this.firstName}} "{{this.middleName}}" {{this.lastName}}
+                    {{else}}
+                        {{this.firstName}} {{this.lastName}} (no middle name)
+                    {{/if}}
+                </li>
             {{/each}}
         </ul>
     </body>
