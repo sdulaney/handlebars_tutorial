@@ -7,7 +7,12 @@ app.set('view engine', 'hbs');
 app.get('/', (request, response) => {
     response.render('home', {
         title: 'Stewart Dulaney\'s Website',
-        content: 'Hello World!'
+        content: 'Hello World!',
+        people: [
+            'Joe Bruin',
+            'Josie Bruin',
+            'Zaddy Block'
+        ]
     });
 });
 
