@@ -5,5 +5,10 @@
     </head>
     <body>
         <p style="color:red;">{{content}}</p>
+        <ul>
+            {{#each people}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
     </body>
 </html>
