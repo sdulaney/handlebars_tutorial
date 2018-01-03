@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/sdulaney/handlebars_tutorial/issues"
   },
-  "homepage": "https://github.com/sdulaney/handlebars_tutorial#readme"
+  "homepage": "https://github.com/sdulaney/handlebars_tutorial#readme",
+  "dependencies": {
+    "express": "4.16.2"
+  }
 }
