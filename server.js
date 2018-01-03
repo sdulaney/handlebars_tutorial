@@ -5,7 +5,10 @@ var app = express();
 app.set('view engine', 'hbs');
 
 app.get('/', (request, response) => {
-    // TODO - Render the home page.
+    response.render('home', {
+        title: 'Stewart Dulaney\'s Website',
+        content: 'Hello World!'
+    });
 });
 
 app.listen(3000, function() {
